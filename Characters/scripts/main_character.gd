@@ -16,6 +16,7 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	_move()
 	move_and_slide()
+	_body.animate(velocity)
 	
 func _move() -> void:
 	var _input_direction: Vector2 = Input.get_vector("move_left", "move_right", "move_forward", "move_backward")
@@ -38,5 +39,6 @@ func is_running() -> bool:
 	if Input.is_action_pressed("shift"):
 		_current_speed = _SPRINT_SPEED
 		return true
+		
 	_current_speed = _NORMAL_SPEED
 	return false

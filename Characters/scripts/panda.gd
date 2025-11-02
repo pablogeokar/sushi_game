@@ -8,8 +8,16 @@ const _LERO_VELOCITY: float = 0.15
 @export var _animation: AnimationPlayer = null
 
 func apply_rotation(_velocity: Vector3) -> void:
-	rotation.y = lerp(rotation.y, atan2(-_velocity.x, -_velocity.z), _LERO_VELOCITY)
+	rotation.y = lerp_angle(rotation.y, atan2(-_velocity.x, -_velocity.z), _LERO_VELOCITY)
 	pass
 	
 func animate(_velocity: Vector3) -> void:
-	pass
+	if _velocity:
+		if _character.is_running():
+			_animation.play("Run")
+			return
+		
+		_animation.play("Walk")
+		return
+	
+	_animation.play("Idle")
