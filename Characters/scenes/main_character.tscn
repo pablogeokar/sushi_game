@@ -10269,16 +10269,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
 shape = SubResource("CapsuleShape3D_5106s")
 
 [node name="SpringArmOffset" type="Node3D" parent="." node_paths=PackedStringArray("_spring_arm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11286926, -1.0425066)
 script = ExtResource("3_k0vte")
 _spring_arm = NodePath("SpringArm")
 
 [node name="SpringArm" type="SpringArm3D" parent="SpringArmOffset"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 2.791284)
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 0, 0)
 spring_length = 5.0
+margin = 0.2
 
 [node name="Camera" type="Camera3D" parent="SpringArmOffset/SpringArm"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0820756, -1.1611598, 3.159361)
+transform = Transform3D(1, 0, 0, 0, 0.76757926, -0.6409542, 0, 0.6409542, 0.76757926, -0.0032162666, 0.15240186, 2.7667868)
 current = true
+fov = 107.99272
+near = 1.0
+far = 2000.0
 
 [node name="Panda" type="Node3D" parent="." node_paths=PackedStringArray("_character", "_animation")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.89475155)
