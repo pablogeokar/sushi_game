@@ -10269,12 +10269,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
 shape = SubResource("CapsuleShape3D_5106s")
 
 [node name="SpringArmOffset" type="Node3D" parent="." node_paths=PackedStringArray("_spring_arm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.11286926, -1.0425066)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8481674, 0.93140364)
 script = ExtResource("3_k0vte")
 _spring_arm = NodePath("SpringArm")
 
 [node name="SpringArm" type="SpringArm3D" parent="SpringArmOffset"]
-transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, 0, 0.25259447, -0.6436238)
 spring_length = 5.0
 margin = 0.2
 
