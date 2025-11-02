@@ -10281,7 +10281,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0820756, -1.1611598, 3.1593
 current = true
 
 [node name="Panda" type="Node3D" parent="." node_paths=PackedStringArray("_character", "_animation")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, -2.165)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.89475155)
 script = ExtResource("2_h61jy")
 _character = NodePath("..")
 _animation = NodePath("Animate")
